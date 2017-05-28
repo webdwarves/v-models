@@ -7,13 +7,13 @@ export enum StatusEnum {
 
 export class UserDetails {
   static statusList = getEnumMembers(StatusEnum);
-  public userId?: number;
-  public userName: string = '';
-  public firstName: string = '';
-  public lastName: string = '';
-  public email: string = '';
-  public phone: string = '';
-  public accessLevel: number = 0;
-  public status: StatusEnum = StatusEnum.active;
-  public timezone: string = '';
+  userId?: number;
+  userName: string = '';
+  firstName: string = '';
+  lastName: string = '';
+  email: string = '';
+  phone: string = '';
+  accessLevel: number = 0;
+  status: StatusEnum = StatusEnum.active;
+  timezone: string = '';
 }

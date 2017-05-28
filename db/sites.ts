@@ -1,10 +1,10 @@
 export class BaseSite {
-  public siteId?: number;
-  public siteName: string = '';
+  siteId?: number;
+  siteName: string = '';
 }
 
 
 export class UserSiteDetails extends BaseSite {
-  public siteAccessLevel: number = 0;
-  public mapProviderId: number = 0;
+  siteAccessLevel: number = 0;
+  mapProviderId: number = 0;
 }

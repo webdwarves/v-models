@@ -1,6 +1,6 @@
-import { SystemPermissionTemplate, SitePermissionTemplate } from 'models/db/permissions';
-import { NotificationTemplate } from 'models/db/notifications';
-import { SignalizationTemplate } from 'models/db/signalizations';
+import { SystemPermissionTemplate, SitePermissionTemplate } from '../db/permissions';
+import { NotificationTemplate } from '../db/notifications';
+import { SignalizationTemplate } from '../db/signalizations';
 
 export class TemplatesResourceModel {
   systemPermissions: SystemPermissionsTemplates;

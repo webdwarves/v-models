@@ -1,8 +1,8 @@
-import { UserSiteDetails } from 'models/db/sites';
-import { UserDetails } from 'models/db/users';
-import { SystemPermissionTypeName } from 'models/db/permissions';
-import { Tag } from 'models/db/tags';
-import { SitePermissions } from 'models/common/permissions';
+import { UserSiteDetails } from '../db/sites';
+import { UserDetails } from '../db/users';
+import { SystemPermissionTypeName } from '../db/permissions';
+import { Tag } from '../db/tags';
+import { SitePermissions } from '../common/permissions';
 
 export class UserDetailsModel {
   sites: UserSiteDetails[] = [];

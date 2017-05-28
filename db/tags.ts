@@ -1,4 +1,4 @@
 export class Tag {
-  public tagTypeId?: number;
-  public tagTypeName: string = '';
+  tagTypeId?: number;
+  tagTypeName: string = '';
 }

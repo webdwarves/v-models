@@ -1,9 +1,9 @@
-import { BaseEvent, EventType } from 'models/db/events';
-import { Tag } from 'models/db/tags';
-import { SignalizationName } from 'models/db/signalizations';
-import { DbPermissionModel } from 'models/db/permissions';
-import { BaseNotification } from 'models/db/notifications';
-import { Timezone } from 'models/db/miscellaneous';
+import { BaseEvent, EventType } from '../db/events';
+import { Tag } from '../db/tags';
+import { SignalizationName } from '../db/signalizations';
+import { DbPermissionModel } from '../db/permissions';
+import { BaseNotification } from '../db/notifications';
+import { Timezone } from '../db/miscellaneous';
 
 export class MiscModel {
   classesData: ClassData[] = [];
