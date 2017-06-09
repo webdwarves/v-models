@@ -1,5 +1,5 @@
-export class SiteAddonFunctionalitySettings {
-  siteAddonFunctionalityId?: number;
+export class SiteAddOnFunctionalitySettings {
+  siteAddOnFunctionalityId?: number;
   functionalityName: string = '';
   configValue: string = '';
   configFormat: string = '';

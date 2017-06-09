@@ -9,7 +9,7 @@ export class UserDetailsModel {
   details: UserDetails = new UserDetails();
   systemPermissions: SystemPermissionTypeName[] = [];
   sitesPermissions: SitesPermissions = {'': new SitePermissions()};
-  tags: Tag[];
+  tags: Tag[] = [];
 }
 
 interface SitesPermissions {
