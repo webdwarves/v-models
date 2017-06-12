@@ -3,7 +3,7 @@ import { Tag } from '../db/tags';
 import { SignalizationName } from '../db/signalizations';
 import { DbPermissionModel } from '../db/permissions';
 import { BaseNotification } from '../db/notifications';
-import { Timezone } from '../db/miscellaneous';
+import { Timezone, MapProvider } from '../db/miscellaneous';
 
 export class MiscModel {
   classesData: ClassData[] = [];
@@ -15,6 +15,7 @@ export class MiscModel {
   signalizationNames: SignalizationName[] = [];
   premissionTypes: DbPermissionModel[] = [];
   notificationTypes: BaseNotification[] = [];
+  mapProviders: MapProvider[] = [];
 }
 
 class ClassData {
