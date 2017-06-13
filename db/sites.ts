@@ -7,15 +7,17 @@ export class BaseSite {
 export class UserSiteDetails extends BaseSite {
   siteAccessLevel: number = 0;
   mapProviderId: number = 0;
-}
-
-export class UserSiteDetailsWithStats extends UserSiteDetails {
+  siteId: 524;
+  siteNam: string;
   latitude: number;
   longitude: number;
   altitude: number;
   deviceMode: number;
   defaultMapProviderId: number;
   timezone: string;
+}
+
+export class UserSiteDetailsWithStats extends UserSiteDetails {
   userCount: number;
   deviceCount: number;
   alarmCount: number;
