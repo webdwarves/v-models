@@ -7,7 +7,7 @@ export class BaseSite {
 export class UserSiteDetails extends BaseSite {
   siteAccessLevel: number = 0;
   mapProviderId: number = 0;
-  siteId: 524;
+  siteId: number;
   siteNam: string;
   latitude: number;
   longitude: number;
