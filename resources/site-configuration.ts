@@ -1,28 +1,28 @@
-import { UserSiteDetails } from '../db/sites';
+import { SiteDetails } from '../db/sites';
 import { DeviceSoftware } from '../db/device-software';
 import { UserDetails } from '../db/users';
 
-export class UserDetailsModel {
-  details: UserSiteDetails[] = [];
+export class SiteConfiguration {
+  details: SiteDetails[] = [];
   classFirmware: DeviceSoftware[] = [];
-  userNotificationMatrix: UserNotificationMatrix;
-  userSignalizationMatrix: UserSignalizationMatrix;
+  userNotificationMatrix: SiteNotificationMatrix;
+  userSignalizationMatrix: SiteSignalizationMatrix;
   siteUsers: UserDetails[]
 }
 
-export class UserNotificationSettings {
+export interface SiteNotificationMatrix {
+  [key: string]: SiteNotificationSettings;
+}
+
+export interface SiteSignalizationMatrix {
+  [key: string]: SiteSignalizationSettings;
+}
+
+export interface SiteSignalizationSettings {
+  [key: string]: string;
+}
+
+export class SiteNotificationSettings {
   sms: boolean;
   email: boolean;
-}
-
-export interface UserNotificationMatrix {
-  [key: string]: UserNotificationSettings;
-}
-
-export interface UserSignalizationMatrix {
-  [key: string]: UserSignalizationSettings;
-}
-
-export interface UserSignalizationSettings {
-  [key: string]: string;
 }

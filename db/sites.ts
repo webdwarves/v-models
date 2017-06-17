@@ -4,7 +4,7 @@ export class BaseSite {
 }
 
 
-export class UserSiteDetails extends BaseSite {
+export class SiteDetails extends BaseSite {
   siteAccessLevel: number = 0;
   mapProviderId: number = 0;
   siteId: number;
@@ -17,7 +17,7 @@ export class UserSiteDetails extends BaseSite {
   timezone: string;
 }
 
-export class UserSiteDetailsWithStats extends UserSiteDetails {
+export class SiteDetailsWithStats extends SiteDetails {
   userCount: number;
   deviceCount: number;
   alarmCount: number;
