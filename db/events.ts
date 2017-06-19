@@ -6,8 +6,13 @@ export class BaseEvent {
 export class EventType {
   eventTypeId: number;
   eventTypeName: string;
-  severityLevel: number;
+  severityLevel: SeverityLevelEnum;
   deviceClassId: number;
   isTypeAlarm: boolean;
   iconId: number;
+}
+export enum SeverityLevelEnum {
+  alarm = 0,
+  warning = 1,
+  info = 2
 }
