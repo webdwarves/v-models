@@ -3,10 +3,10 @@ import { NotificationTemplate } from '../db/notifications';
 import { SignalizationTemplate } from '../db/signalizations';
 
 export class TemplatesResourceModel {
-  systemPermissions: SystemPermissionsTemplates;
-  sitePermissions: SitePermissionTemplates;
-  notifications: NotificationTemplates;
-  signalization: SignalizationTemplates;
+  systemPermissions: SystemPermissionsTemplates = {};
+  sitePermissions: SitePermissionTemplates = {};
+  notifications: NotificationTemplates = {};
+  signalization: SignalizationTemplates = {};
 }
 
 interface SystemPermissionsTemplates {

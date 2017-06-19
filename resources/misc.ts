@@ -6,16 +6,16 @@ import { BaseNotification } from '../db/notifications';
 import { Timezone, MapProvider } from '../db/miscellaneous';
 
 export class MiscModel {
-  classesData: ClassData[] = [];
-  eventTypes: EventType[] = [];
-  timezones: Timezone[] = [];
+  classesData: ClassData[] = [new ClassData()];
+  eventTypes: EventType[] = [new EventType()];
+  timezones: Timezone[] = [new Timezone()];
   iconUrls: IconUrls = new IconUrls();
-  tags: Tag[] = [];
-  signalizationEvents: BaseEvent[] = [];
-  signalizationNames: SignalizationName[] = [];
-  premissionTypes: DbPermissionModel[] = [];
-  notificationTypes: BaseNotification[] = [];
-  mapProviders: MapProvider[] = [];
+  tags: Tag[] = [new Tag()];
+  signalizationEvents: BaseEvent[] = [new BaseEvent()];
+  signalizationNames: SignalizationName[] = [new SignalizationName()];
+  permissionTypes: DbPermissionModel[] = [new DbPermissionModel()];
+  notificationTypes: BaseNotification[] = [new BaseNotification()];
+  mapProviders: MapProvider[] = [new MapProvider()];
 }
 
 class ClassData {
@@ -26,12 +26,12 @@ class ClassData {
 }
 
 class IconUrls {
-  deviceAlarm: Icon[] = [];
-  deviceClass: Icon[] = [];
+  deviceAlarm: Icon[] = [new Icon()];
+  deviceClass: Icon[] = [new Icon()];
 }
 
 class Icon {
   iconId?: number;
-  iconName: string;
+  iconName: string = '';
   iconImage: any;
 }
