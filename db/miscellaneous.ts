@@ -19,3 +19,12 @@ export class MapProvider {
   initialZoomLevel: number;
   providerKey: string;
 }
+
+export class SystemIssue {
+  issueId: number;
+  issueTypeId: number;
+  deviceId: number;
+  issueDetails: string;
+  issueLevel: number;
+  timeStamp: string;
+}
