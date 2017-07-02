@@ -4,21 +4,21 @@ export class BaseSite {
 }
 
 
-export class UserSiteDetails extends BaseSite {
+export class SiteDetails extends BaseSite {
   siteAccessLevel: number = 0;
   mapProviderId: number = 0;
-  siteId: 524;
-  siteNam: string;
-  latitude: number;
-  longitude: number;
-  altitude: number;
-  deviceMode: number;
+  siteId: number;
+  siteNam: string = '';
+  latitude: number = 0;
+  longitude: number = 0;
+  altitude: number = 0;
+  deviceMode: number = 0;
   defaultMapProviderId: number;
   timezone: string;
 }
 
-export class UserSiteDetailsWithStats extends UserSiteDetails {
-  userCount: number;
-  deviceCount: number;
-  alarmCount: number;
+export class SiteDetailsWithStats extends SiteDetails {
+  userCount: number = 0;
+  deviceCount: number = 0;
+  alarmCount: number = 0;
 }
