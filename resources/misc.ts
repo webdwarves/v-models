@@ -9,7 +9,7 @@ export class MiscModel {
   classesData: ClassData[] = [new ClassData()];
   eventTypes: EventType[] = [new EventType()];
   timezones: Timezone[] = [new Timezone()];
-  iconUrls: IconUrls = new IconUrls();
+  iconImages: iconImages = new iconImages();
   tags: Tag[] = [new Tag()];
   signalizationEvents: BaseEvent[] = [new BaseEvent()];
   signalizationNames: SignalizationName[] = [new SignalizationName()];
@@ -25,7 +25,7 @@ class ClassData {
   iconId?: number;
 }
 
-class IconUrls {
+class iconImages {
   deviceAlarm: Icon[] = [new Icon()];
   deviceClass: Icon[] = [new Icon()];
 }
