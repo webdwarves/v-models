@@ -24,3 +24,13 @@ export class ExtendedSiteDetails extends SiteDetails {
   siteAccessLevel: number = 0;
   mapProviderId: number = 0;
 }
+
+class AddSiteParams {
+  siteName: string = '';
+  latitude: number = 0;
+  longitude: number = 0;
+  altitude: number = 0;
+  deviceMode: number = 0;
+  defaultMapProviderId: number;
+  timezone: string;
+}
