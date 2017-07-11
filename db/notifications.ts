@@ -23,3 +23,7 @@ export class Notification extends BaseNotification {
   sendSuccess: boolean;
   timeStamp: string;
 }
+
+export class UserNotifications {
+  [userId: string]: Notification[];
+}
