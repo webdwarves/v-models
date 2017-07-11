@@ -1,0 +1,3 @@
+class BooleanResult {
+  result: boolean;
+}
