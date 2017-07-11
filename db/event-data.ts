@@ -1,3 +1,9 @@
+export class EventDataDetails {
+  eventInfoId: number;
+  eventInfoDetail: string;
+  timeStamp: string;
+}
+
 export class SiteEventData {
   eventDataId: number;
   deviceId: number;

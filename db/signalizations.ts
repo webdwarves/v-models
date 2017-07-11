@@ -9,3 +9,7 @@ export class SignalizationTemplate extends SignalizationName {
   eventName: string = '';
   configValue: number = 0;
 }
+
+export class SignalizationModes {
+  [key: string]: string[]
+}
