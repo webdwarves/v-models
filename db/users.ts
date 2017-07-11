@@ -16,4 +16,7 @@ export class UserDetails {
   accessLevel: number = 0;
   status: StatusEnum = StatusEnum.active;
   timezone: string = '';
+  languageId: number;
+  companyName: string;
+  jobPosition: string;
 }
