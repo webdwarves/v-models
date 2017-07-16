@@ -23,3 +23,26 @@ export class DevicesModel {
   alarmSuppressions: DeviceAlarmSuppressions[];
   alarms: DeviceAlarm[];
 }
+
+class SiteDeviceDetails {
+  info: DeviceInfo;
+  location: DeviceLocation;
+  selfTest: DeviceSelfTest;
+}
+
+export class SeteDevicesDetails {
+  [key: string]: SiteDeviceDetails
+}
+
+export class AddDeviceModel {
+  deviceName: string;
+  signature: string;
+  deviceClassId: number;
+  latitude?: number;
+  longitude?: number;
+  altitude?: number;
+  roll?: number;
+  pitch?: number;
+  yaw?: number;
+  positionPolicyId?: number;
+}

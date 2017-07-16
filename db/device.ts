@@ -17,6 +17,7 @@ export class DeviceInfo extends BaseDeviceInfo {
   softwareCrc: number;
   softwareBuildDatetime: string;
   hardwareVersion: number;
+  hasAnyAlarmActive: boolean;
   selfTestStatus: number;
 }
 
