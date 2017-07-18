@@ -33,5 +33,5 @@ export class NotificationConfiguration {
 }
 
 export class UserNotificationMatrix {
-  [eventTypeName: string]: NotificationConfiguration
+  [eventTypeName: string]: NotificationConfiguration;
 }

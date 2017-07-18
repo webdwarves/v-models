@@ -11,13 +11,13 @@ export class SignalizationTemplate extends SignalizationName {
 }
 
 export class SignalizationModes {
-  [key: string]: string[]
+  [key: string]: string[];
 }
 
 class SignalizationDeviceConfiguration {
-  [sigDeviceName: string]: string
+  [sigDeviceName: string]: string;
 }
 
 export class UserSignalizationMatrix {
-  [eventName: string]: SignalizationDeviceConfiguration
+  [eventName: string]: SignalizationDeviceConfiguration;
 }
