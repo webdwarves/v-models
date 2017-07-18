@@ -82,6 +82,8 @@ export class DeviceSelfTestHistory {
 }
 
 export class DeviceSelfTest {
+  deviceId: number;
+  deviceName: string;
   selfTestId: number;
   isActive: boolean;
   result: number;
