@@ -1,6 +1,6 @@
 export class SignalizationName {
   sigDeviceId?: number;
-  sigDeviceName: string = '';
+  sigDeviceName?: string = '';
 }
 
 export class SignalizationTemplate extends SignalizationName {
