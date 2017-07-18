@@ -1,5 +1,5 @@
 export class DeviceSoftware {
-  softwareId: number;
+  softwareId?: number;
   deviceClassId: number;
   className: string;
   deviceSubclassId: number;
@@ -7,6 +7,6 @@ export class DeviceSoftware {
   softwareCrc: number;
   minHwVersion: number;
   maxHwVersion: number;
-  postTime: string;
+  postTime?: string;
   isActive: boolean;
 }
