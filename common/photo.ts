@@ -1,9 +1,7 @@
-type file = number;
-
 export class BasePhotoDetails {
   description: string;
   pictureTaken: string;
-  deviceImg: file;
+  deviceImg: object;
 }
 
 export class PhotoDetails extends BasePhotoDetails {
