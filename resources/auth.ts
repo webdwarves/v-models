@@ -6,3 +6,7 @@ class AuthResult {
 class ProlongSessionResult {
   sessionTimeout: number;
 }
+
+class TokenResult {
+  token: string;
+}
