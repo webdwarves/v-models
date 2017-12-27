@@ -93,8 +93,8 @@ export class DeviceSelfTest {
 export class DeviceAlarmSuppressions {
   deviceAlarmSuppressId: number;
   deviceId: number;
-  eventTypeId: number,
-  isSuppressed: boolean,
+  eventTypeId: number;
+  isSuppressed: boolean;
   suppressStartTime: string;
   suppressEndTime: string;
   suppressMinutes: number;
