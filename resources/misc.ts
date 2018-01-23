@@ -20,7 +20,7 @@ export class MiscModel {
   systemPermissionsTemplateNames: string[] = [];
 }
 
-class ClassData {
+export class ClassData {
   classId?: number;
   className: string = '';
   displayPriority: number = 0;
