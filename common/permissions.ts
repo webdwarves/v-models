@@ -1,19 +1,19 @@
 import { getEnumMembers } from '../utils/functions';
 
-export enum PermissionTypeNameEnum {
+export enum PermissionLevelEnum {
   NoAccess = 0,
   ReadOnlyAccess = 1,
   ReadAndWrite = 2
 }
 
 export class SitePermissions {
-  static permissionTypes = getEnumMembers(PermissionTypeNameEnum);
-  SiteConfiguration: number = PermissionTypeNameEnum.NoAccess;
-  ManageDevices: number = PermissionTypeNameEnum.NoAccess;
-  Structures: number = PermissionTypeNameEnum.NoAccess;
-  Zones: number = PermissionTypeNameEnum.NoAccess;
-  AlarmHandling: number = PermissionTypeNameEnum.NoAccess;
-  SignalizationEditor: number = PermissionTypeNameEnum.NoAccess;
-  NotificationEditor: number = PermissionTypeNameEnum.NoAccess;
-  SiteEvacuation: number = PermissionTypeNameEnum.NoAccess;
+  static permissionTypes = getEnumMembers(PermissionLevelEnum);
+  SiteConfiguration: number = PermissionLevelEnum.NoAccess;
+  ManageDevices: number = PermissionLevelEnum.NoAccess;
+  Structures: number = PermissionLevelEnum.NoAccess;
+  Zones: number = PermissionLevelEnum.NoAccess;
+  AlarmHandling: number = PermissionLevelEnum.NoAccess;
+  SignalizationEditor: number = PermissionLevelEnum.NoAccess;
+  NotificationEditor: number = PermissionLevelEnum.NoAccess;
+  SiteEvacuation: number = PermissionLevelEnum.NoAccess;
 }

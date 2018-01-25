@@ -1,8 +1,10 @@
-import { PermissionTypeNameEnum } from '../common/permissions'
+import { PermissionLevelEnum } from '../common/permissions'
+
 export class Permission {
   permissionTypeId?: number;
-  permissionTypeName: PermissionTypeNameEnum = PermissionTypeNameEnum.NoAccess;
-  permissionLevel: number = 1;
+  permissionId?: number;
+  permissionTypeName: string;
+  permissionLevel: PermissionLevelEnum = PermissionLevelEnum.NoAccess;
 }
 
 export class SystemPermissionTemplate extends Permission {

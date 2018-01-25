@@ -1,4 +1,6 @@
 import { getEnumMembers } from '../utils/functions'
+import { BaseSite } from './sites'
+import { Tag } from './tags'
 
 export enum StatusEnum {
   active = 1,
@@ -16,7 +18,13 @@ export class UserDetails {
   accessLevel: number = 0;
   status: StatusEnum = StatusEnum.active;
   timezone: string = '';
+  useOwnTimezone: boolean = false;
   languageId: number;
   companyName: string;
   jobPosition: string;
+}
+
+export class ExtendedUserDetails extends UserDetails {
+  sites: BaseSite[]
+  tags: Tag[]
 }

@@ -3,11 +3,11 @@ import { DeviceSoftware } from '../db/device-software';
 import { UserDetails } from '../db/users';
 
 export class SiteConfiguration {
-  details: SiteDetails[] = [new SiteDetails()];
+  details: SiteDetails = new SiteDetails();
   classFirmware: DeviceSoftware[] = [new DeviceSoftware()];
   userNotificationMatrix: SiteNotificationMatrix = {};
   userSignalizationMatrix: SiteSignalizationMatrix = {};
-  siteUsers = [new UserDetails]
+  siteUsers = [new UserDetails()];
 }
 
 export interface SiteNotificationMatrix {
