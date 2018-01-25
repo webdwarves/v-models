@@ -4,7 +4,7 @@ import { UserDetails } from '../db/users';
 
 export class SiteConfiguration {
   details: SiteDetails = new SiteDetails();
-  classFirmware: DeviceSoftware[] = [new DeviceSoftware()];
+  classFirmwares: DeviceSoftware[] = [new DeviceSoftware()];
   userNotificationMatrix: SiteNotificationMatrix = {};
   userSignalizationMatrix: SiteSignalizationMatrix = {};
   siteUsers = [new UserDetails()];
