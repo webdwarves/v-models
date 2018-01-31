@@ -7,6 +7,7 @@ export class EventDataDetails {
 export class SiteEventData {
   eventDataId: number;
   deviceId: number;
+  deviceName: string;
   eventTypeId: number;
   seqNumber: number;
   eventTime: string;
