@@ -1,3 +1,5 @@
+import { AlarmOnStateEnum, InAlarmStateEnum } from './alarm';
+
 class BaseDeviceInfo {
   deviceId: number;
   deviceName: string;
@@ -104,8 +106,8 @@ export class DeviceAlarm {
   deviceId: number;
   eventTypeId: number;
   eventTypeName: string;
-  alarmOnState: number;
-  inAlarmState: number;
+  alarmOnState: AlarmOnStateEnum;
+  inAlarmState: InAlarmStateEnum;
   eventTime: string;
   timeStamp: string;
 }
