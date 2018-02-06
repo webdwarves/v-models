@@ -13,6 +13,7 @@ export enum InAlarmStateEnum {
 
 export class AlarmState {
   deviceId: number;
+  deviceName: string;
   eventTypeId: number;
   eventTypeName: string;
   alarmOnState: AlarmOnStateEnum;
