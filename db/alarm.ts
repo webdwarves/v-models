@@ -14,6 +14,7 @@ export enum InAlarmStateEnum {
 export class AlarmState {
   deviceId: number;
   deviceName: string;
+  deviceClassId: number;
   eventTypeId: number;
   eventTypeName: string;
   alarmOnState: AlarmOnStateEnum;
