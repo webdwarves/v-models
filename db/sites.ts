@@ -25,6 +25,7 @@ export class SiteDetailsWithStats extends SiteDetails {
   deviceCount: number = 0;
   alarmCount: number = 0;
   maxUserCount: number = 0;
+  evacuationEnabled: boolean = false;
 }
 
 export class ExtendedSiteDetails extends SiteDetails {
