@@ -13,7 +13,7 @@ import {
 
 export class DevicesModel {
   details: DeviceInfo;
-  lcoation: DeviceLocation;
+  location: DeviceLocation;
   state: DeviceState[];
   data: DeviceData[];
   config: DeviceConfig[];
