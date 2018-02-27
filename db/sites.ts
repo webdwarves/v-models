@@ -18,6 +18,7 @@ export class SiteDetails extends BaseSite {
   deviceMode: DeviceMode = DeviceMode.Normal;
   defaultMapProviderId: number;
   timezone: string;
+  isArmed: boolean;
 }
 
 export class SiteDetailsWithStats extends SiteDetails {

@@ -3,4 +3,5 @@ export class Zone {
   zoneName: string;
   deviceMode: number;
   polygon: string;
+  isArmed: boolean;
 }

@@ -20,6 +20,7 @@ export class DeviceInfo extends BaseDeviceInfo {
   softwareBuildDatetime: string;
   hardwareVersion: number;
   selfTestStatus: number;
+  isArmed: boolean;
 }
 
 export class DeviceLocation extends BaseDeviceInfo {
