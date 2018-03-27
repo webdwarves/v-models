@@ -1,16 +1,16 @@
 import { Grouping } from '../db/grouping';
 
-class MapGrouping extends Grouping {
+export class MapGrouping extends Grouping {
   devices: MapGroupingDevice[] = [];
   structures: MapGroupingStructure[] = [];
 }
 
-class MapGroupingDevice {
+export class MapGroupingDevice {
   deviceId: number;
   deviceName: string;
 }
 
-class MapGroupingStructure {
+export class MapGroupingStructure {
   structureId: number;
   structureName: string;
 }
