@@ -27,7 +27,6 @@ export class DevicesModel {
 class SiteDeviceDetails {
   info: DeviceInfo;
   location: DeviceLocation;
-  selfTest: DeviceSelfTest;
 }
 
 export class SiteDevicesDetails {
