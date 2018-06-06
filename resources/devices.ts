@@ -20,7 +20,7 @@ export class DevicesModel {
   eventHistory: DeviceEventHistory[];
   selfTestHistory: DeviceSelfTestHistory[];
   selfTest: DeviceSelfTest[];
-  alarmSuppressions: DeviceAlarmSuppressions[];
+  alarmsSuppresions: DeviceAlarmSuppressions[];
   alarms: DeviceAlarm[];
 }
 
@@ -30,7 +30,7 @@ class SiteDeviceDetails {
   selfTest: DeviceSelfTest;
 }
 
-export class SeteDevicesDetails {
+export class SiteDevicesDetails {
   [key: string]: SiteDeviceDetails
 }
 
