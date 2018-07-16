@@ -7,31 +7,38 @@ import { Structure } from '../db/structures';
 import { UserDetails } from '../db/users';
 import { Zone } from '../db/zone';
 
+export interface DumpDeviceDetails {
+  info: DeviceInfo;
+  location: DeviceLocation;
+}
+
+export interface DumpDeviceConfig {
+  config: DeviceConfig[];
+  alarms: DeviceAlarm[];
+  alarmsSuppresions: DeviceAlarmSuppressions[];
+}
+
+export interface DumpDeviceChanges extends Partial<DumpDeviceDetails>, Partial<DumpDeviceConfig> {
+}
+
 export interface SiteDumpResourceModel {
   user: UserDetails;
   site: SiteDetails;
   permissions: Permission[];
   devices: {
-    [ key: string ]: {
-      info: DeviceInfo;
-      location: DeviceLocation;
-    }
+    [ key: string ]: DumpDeviceDetails;
   },
   devicesConfig: {
-    [ key: string ]: {
-      config: DeviceConfig[];
-      alarms: DeviceAlarm[];
-      alarmsSuppresions: DeviceAlarmSuppressions[];
-    }
+    [ key: string ]: DumpDeviceConfig;
   }
   addOns: {
-    details: SiteAddOnFunctionalitySettings[]
-    availableClasses: SiteDeviceClass[]
-    availableAlarms: SiteDeviceAlarm[]
+    details: SiteAddOnFunctionalitySettings[];
+    availableClasses: SiteDeviceClass[];
+    availableAlarms: SiteDeviceAlarm[];
   },
   map: {
-    groupings: Grouping[],
-    structures: Structure[],
-    zones: Zone[]
+    groupings: Grouping[];
+    structures: Structure[];
+    zones: Zone[];
   }
 }
