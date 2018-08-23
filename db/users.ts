@@ -22,6 +22,7 @@ export class UserDetails {
   languageId: number;
   companyName: string;
   jobPosition: string;
+  resetPassword: boolean = true;
 }
 
 export class ExtendedUserDetails extends UserDetails {
