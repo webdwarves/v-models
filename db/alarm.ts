@@ -22,3 +22,8 @@ export class AlarmState {
   eventTime: string;
   timeStamp: string;
 }
+
+export interface AlarmStateWithSite extends AlarmState {
+  siteId: number;
+  siteName: string;
+}
