@@ -1,8 +1,11 @@
 import { AlarmOnStateEnum, InAlarmStateEnum } from './alarm';
 
-class BaseDeviceInfo {
+export class ZoneDevice {
   deviceId: number;
   deviceName: string;
+}
+
+class BaseDeviceInfo extends ZoneDevice {
   onlineState: number;
   hasAnyAlarmActive: boolean;
   className: string;
