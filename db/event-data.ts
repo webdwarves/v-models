@@ -22,4 +22,6 @@ export class SiteEventData {
   alarmStateTypeId: number;
   eventTypeName: string;
   severityLevel: number;
+  latitude: number;
+  longitude: number;
 }

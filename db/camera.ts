@@ -10,6 +10,11 @@ export interface CameraImage {
   timeStamp: string
 }
 
+export interface CameraImageWithLocation extends CameraImage {
+  latitude: number,
+  longitude: number
+}
+
 export interface Camera {
   cameraDeviceId: number,
   cameraDeviceName: string,
