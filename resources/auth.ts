@@ -1,6 +1,9 @@
 class AuthResult {
-  userId: number;
+  sessionReminderTimeout: number;
   sessionTimeout: number;
+  userDeviceId: number | null;
+  userId: number;
+  resetPassword?: boolean;
 }
 
 class ProlongSessionResult {
