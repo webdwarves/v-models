@@ -21,6 +21,8 @@ export class AlarmState {
   inAlarmState: InAlarmStateEnum;
   eventTime: string;
   timeStamp: string;
+  latitude?: number;
+  longitude?: number;
 }
 
 export interface AlarmStateWithSite extends AlarmState {
