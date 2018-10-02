@@ -24,7 +24,7 @@ export class DevicesModel {
   alarms: DeviceAlarm[];
 }
 
-class SiteDeviceDetails {
+export class SiteDeviceDetails {
   info: DeviceInfo;
   location: DeviceLocation;
 }
