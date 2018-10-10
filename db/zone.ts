@@ -1,7 +1,7 @@
-export class Zone {
+export class Zone<PolygonType = string> {
   zoneId: number;
   zoneName: string;
   deviceMode: number;
-  polygon: string;
+  polygon: PolygonType;
   isArmed: boolean;
 }
