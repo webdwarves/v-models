@@ -23,6 +23,7 @@ export class UserDetails {
   companyName: string;
   jobPosition: string;
   resetPassword: boolean = true;
+  hasVirtualPin: boolean = false;
 }
 
 export class ExtendedUserDetails extends UserDetails {
