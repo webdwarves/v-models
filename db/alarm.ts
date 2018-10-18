@@ -23,6 +23,7 @@ export class AlarmState {
   timeStamp: string;
   latitude?: number;
   longitude?: number;
+  pendingAlarmCount: number;
 }
 
 export interface AlarmStateWithSite extends AlarmState {
