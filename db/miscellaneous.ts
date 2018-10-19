@@ -18,6 +18,7 @@ export class MapProvider {
   maxZoomLevel: number;
   initialZoomLevel: number;
   providerKey: string;
+  isLocallyHosted: boolean;
 }
 
 export class SystemIssue {
