@@ -4,13 +4,6 @@ export class EventDataDetails {
   timeStamp: string;
 }
 
-export class DeviceEventInfoDetail {
-  deviceEventInfoId: number;
-  eventInfoDetail: string;
-  timeStamp: string;
-  eventTypeId: number;
-}
-
 export class SiteEventData {
   eventDataId: number;
   deviceId: number;
