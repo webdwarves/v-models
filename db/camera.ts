@@ -7,7 +7,8 @@ export interface CameraImage {
   eventTypeId: number,
   imgUrl: string,
   pictureTaken: string,
-  timeStamp: string
+  timeStamp: string,
+  qualityIndex: number
 }
 
 export interface CameraImageWithLocation extends CameraImage {
