@@ -21,11 +21,19 @@ export class MapProvider {
   isLocallyHosted: boolean;
 }
 
+export enum IssueLevelEnum {
+  info = 1,
+  warning = 2,
+  critical = 3
+}
+
 export class SystemIssue {
-  issueId: number;
-  issueTypeId: number;
-  deviceId: number;
-  issueDetails: string;
-  issueLevel: number;
-  timeStamp: string;
+  deviceClassId: number
+  deviceId: number
+  deviceName: string
+  issueDetails: string
+  issueId: number
+  issueLevel: IssueLevelEnum
+  issueTypeId: number
+  timeStamp: string
 }
