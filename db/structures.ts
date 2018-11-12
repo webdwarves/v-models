@@ -1,5 +1,5 @@
-export class Structure {
+export class Structure<PolygonType = string> {
   structureId: number;
   structureName: string;
-  polygon: string;
+  polygon: PolygonType;
 }
