@@ -3,13 +3,13 @@ export enum Status {
 }
 
 class BooleanResult {
-  result: boolean;
+  result: boolean
 }
 
 class IdResult {
-  id: number;
+  id: number
 }
 
 class OkResult {
-  status: Status;
+  status: Status
 }

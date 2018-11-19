@@ -1,26 +1,26 @@
-import { SystemPermissionTemplate, SitePermissionTemplate } from '../db/permissions';
-import { NotificationTemplate } from '../db/notifications';
-import { SignalizationTemplate } from '../db/signalizations';
+import { NotificationTemplate } from '../db/notifications'
+import { SitePermissionTemplate, SystemPermissionTemplate } from '../db/permissions'
+import { SignalizationTemplate } from '../db/signalizations'
 
 export class TemplatesResourceModel {
-  systemPermissions: SystemPermissionsTemplates = {};
-  sitePermissions: SitePermissionTemplates = {};
-  notifications: NotificationTemplates = {};
-  signalization: SignalizationTemplates = {};
+  systemPermissions: SystemPermissionsTemplates = {}
+  sitePermissions: SitePermissionTemplates = {}
+  notifications: NotificationTemplates = {}
+  signalization: SignalizationTemplates = {}
 }
 
 interface SystemPermissionsTemplates {
-  [key: string]: SystemPermissionTemplate[];
+  [ key: string ]: SystemPermissionTemplate[];
 }
 
 interface SitePermissionTemplates {
-  [key: string]: SitePermissionTemplate[];
+  [ key: string ]: SitePermissionTemplate[];
 }
 
 interface NotificationTemplates {
-  [key: string]: NotificationTemplate[];
+  [ key: string ]: NotificationTemplate[];
 }
 
 interface SignalizationTemplates {
-  [key: string]: SignalizationTemplate[];
+  [ key: string ]: SignalizationTemplate[];
 }

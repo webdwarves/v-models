@@ -1,14 +1,14 @@
 export class BasePhotoDetails {
-  description: string;
-  pictureTaken: string;
+  description: string
+  pictureTaken: string
 }
 
 export class PhotoDetails extends BasePhotoDetails {
-  deviceImgId: number;
-  timeStamp: string;
+  deviceImgId: number
+  timeStamp: string
 }
 
 export class UserPhotoDetails {
-  userImgId: number;
-  timeStamp: string;
+  userImgId: number
+  timeStamp: string
 }

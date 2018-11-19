@@ -8,22 +8,22 @@ export enum StatusEnum {
 }
 
 export class UserDetails {
-  static statusList = getEnumMembers(StatusEnum);
-  userId?: number;
-  userName: string = '';
-  firstName: string = '';
-  lastName: string = '';
-  email: string = '';
-  phone: string = '';
-  accessLevel: number = 0;
-  status: StatusEnum = StatusEnum.active;
-  timezone: string = '';
-  useOwnTimezone: boolean = false;
-  languageId: number;
-  companyName: string;
-  jobPosition: string;
-  resetPassword: boolean = true;
-  hasVirtualPin: boolean = false;
+  static statusList = getEnumMembers(StatusEnum)
+  userId?: number
+  userName: string = ''
+  firstName: string = ''
+  lastName: string = ''
+  email: string = ''
+  phone: string = ''
+  accessLevel: number = 0
+  status: StatusEnum = StatusEnum.active
+  timezone: string = ''
+  useOwnTimezone: boolean = false
+  languageId: number
+  companyName: string
+  jobPosition: string
+  resetPassword: boolean = true
+  hasVirtualPin: boolean = false
 }
 
 export class ExtendedUserDetails extends UserDetails {

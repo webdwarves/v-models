@@ -12,18 +12,18 @@ export enum InAlarmStateEnum {
 }
 
 export class AlarmState {
-  deviceId: number;
-  deviceName: string;
-  deviceClassId: number;
-  eventTypeId: number;
-  eventTypeName: string;
-  alarmOnState: AlarmOnStateEnum;
-  inAlarmState: InAlarmStateEnum;
-  eventTime: string;
-  timeStamp: string;
-  latitude?: number;
-  longitude?: number;
-  pendingAlarmCount: number;
+  deviceId: number
+  deviceName: string
+  deviceClassId: number
+  eventTypeId: number
+  eventTypeName: string
+  alarmOnState: AlarmOnStateEnum
+  inAlarmState: InAlarmStateEnum
+  eventTime: string
+  timeStamp: string
+  latitude?: number
+  longitude?: number
+  pendingAlarmCount: number
 }
 
 export interface AlarmStateWithSite extends AlarmState {

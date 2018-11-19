@@ -1,4 +1,4 @@
 export class Grouping {
-  groupingId: number;
-  groupingName: string;
+  groupingId: number
+  groupingName: string
 }

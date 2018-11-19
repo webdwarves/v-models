@@ -1,26 +1,25 @@
 import { PermissionLevelEnum } from '../common/permissions'
 
 export class Permission {
-  permissionTypeId?: number;
-  permissionId?: number;
-  permissionTypeName: string;
-  permissionLevel: PermissionLevelEnum = PermissionLevelEnum.NoAccess;
+  permissionTypeId?: number
+  permissionId?: number
+  permissionTypeName: string
+  permissionLevel: PermissionLevelEnum = PermissionLevelEnum.NoAccess
 }
 
 export class SystemPermissionTemplate extends Permission {
-  systemPermissionTemplateId?: number;
+  systemPermissionTemplateId?: number
 }
 
 export class SitePermissionTemplate extends Permission {
-  systemPermissionTemplateId?: number;
+  systemPermissionTemplateId?: number
 }
 
 export class DbPermissionModel {
-  permissionTypeId: number;
-  permissionTypeName: string;
-  isForSite: boolean;
+  permissionTypeId: number
+  permissionTypeName: string
+  isForSite: boolean
 }
-
 
 export enum SystemPermissionTypeName {
   AdminPageAccess,

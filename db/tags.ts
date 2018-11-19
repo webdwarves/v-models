@@ -1,4 +1,4 @@
 export class Tag {
-  tagTypeId?: number;
-  tagTypeName: string = '';
+  tagTypeId?: number
+  tagTypeName: string = ''
 }
