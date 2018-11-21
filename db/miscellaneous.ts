@@ -22,9 +22,9 @@ export class MapProvider {
 }
 
 export enum IssueLevelEnum {
-  info = 1,
-  warning = 2,
-  critical = 3
+  critical = 0,
+  warning = 1,
+  info = 2
 }
 
 export class SystemIssue {
