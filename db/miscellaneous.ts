@@ -27,13 +27,21 @@ export enum IssueLevelEnum {
   info = 2
 }
 
-export class SystemIssue {
-  deviceClassId: number
+interface SystemIssueBase {
+  issueTypeId: number
   deviceId: number
   deviceName: string
+  deviceClassId: number
   issueDetails: string
-  issueId: number
   issueLevel: IssueLevelEnum
-  issueTypeId: number
   timeStamp: string
+}
+
+export interface SystemIssue {
+  issueId: number
+}
+
+export interface HistoricalSystemIssue {
+  issueHistoryId: number
+  eventTime: string
 }
