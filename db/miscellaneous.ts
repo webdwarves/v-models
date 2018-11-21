@@ -37,11 +37,11 @@ interface SystemIssueBase {
   timeStamp: string
 }
 
-export interface SystemIssue {
+export interface SystemIssue extends SystemIssueBase {
   issueId: number
 }
 
-export interface HistoricalSystemIssue {
+export interface HistoricalSystemIssue extends SystemIssueBase {
   issueHistoryId: number
   eventTime: string
 }
