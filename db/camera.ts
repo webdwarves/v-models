@@ -1,3 +1,5 @@
+export type CameraQualityIndex = -1 | 1 | 2 | 3 | 4 | 5 | 6 | 7
+
 export interface CameraImage {
   cameraImgId: number,
   cameraDeviceId: number,
@@ -20,4 +22,8 @@ export interface Camera {
   cameraDeviceId: number,
   cameraDeviceName: string,
   cameraUrl: string
+}
+
+export interface CameraWithQualityIndex extends Camera {
+  qualityIndex: CameraQualityIndex
 }
