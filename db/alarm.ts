@@ -27,6 +27,6 @@ export class AlarmState {
 }
 
 export interface AlarmStateWithSite extends AlarmState {
-  siteId: number;
-  siteName: string;
+  siteId: number
+  siteName: string
 }

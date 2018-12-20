@@ -25,13 +25,13 @@ export class Notification extends BaseNotification {
 }
 
 export class UserNotifications {
-  [ userId: string ]: Notification[];
+  [ userId: string ]: Notification[]
 }
 
 export class NotificationConfiguration {
-  [ notificationTypeName: string ]: boolean;
+  [ notificationTypeName: string ]: boolean
 }
 
 export class UserNotificationMatrix {
-  [ eventTypeName: string ]: NotificationConfiguration;
+  [ eventTypeName: string ]: NotificationConfiguration
 }

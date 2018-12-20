@@ -11,15 +11,15 @@ export class SiteConfiguration {
 }
 
 export interface SiteNotificationMatrix {
-  [ key: string ]: SiteNotificationSettings;
+  [ key: string ]: SiteNotificationSettings
 }
 
 export interface SiteSignalizationMatrix {
-  [ key: string ]: SiteSignalizationSettings;
+  [ key: string ]: SiteSignalizationSettings
 }
 
 export interface SiteSignalizationSettings {
-  [ key: string ]: string;
+  [ key: string ]: string
 }
 
 export class SiteNotificationSettings {

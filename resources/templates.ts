@@ -10,17 +10,17 @@ export class TemplatesResourceModel {
 }
 
 interface SystemPermissionsTemplates {
-  [ key: string ]: SystemPermissionTemplate[];
+  [ key: string ]: SystemPermissionTemplate[]
 }
 
 interface SitePermissionTemplates {
-  [ key: string ]: SitePermissionTemplate[];
+  [ key: string ]: SitePermissionTemplate[]
 }
 
 interface NotificationTemplates {
-  [ key: string ]: NotificationTemplate[];
+  [ key: string ]: NotificationTemplate[]
 }
 
 interface SignalizationTemplates {
-  [ key: string ]: SignalizationTemplate[];
+  [ key: string ]: SignalizationTemplate[]
 }
