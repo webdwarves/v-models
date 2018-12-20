@@ -1,4 +1,4 @@
-class AuthResult {
+export class AuthResult {
   sessionReminderTimeout: number
   sessionTimeout: number
   userDeviceId: number | null
@@ -6,10 +6,10 @@ class AuthResult {
   resetPassword?: boolean
 }
 
-class ProlongSessionResult {
+export class ProlongSessionResult {
   sessionTimeout: number
 }
 
-class TokenResult {
+export class TokenResult {
   token: string
 }
