@@ -1,4 +1,5 @@
 import { DeviceSoftware } from '../db/device-software'
+import { Permission } from '../db/permissions'
 import { SiteDetails } from '../db/sites'
 import { UserDetails } from '../db/users'
 
@@ -8,6 +9,11 @@ export class SiteConfiguration {
   userNotificationMatrix: SiteNotificationMatrix = {}
   userSignalizationMatrix: SiteSignalizationMatrix = {}
   siteUsers = [ new UserDetails() ]
+  permissions: SitePermissionsMatrix = {}
+}
+
+export interface SitePermissionsMatrix {
+  [ key: string ]: Permission
 }
 
 export interface SiteNotificationMatrix {
