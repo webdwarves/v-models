@@ -125,3 +125,10 @@ class DeviceLocationUpdate {
   pitch: number
   yaw: number
 }
+
+export class DeviceImage {
+  description: string
+  deviceImgId: number
+  pictureTaken: string
+  timeStamp: string
+}
