@@ -27,6 +27,7 @@ export class DevicesModel {
 export class SiteDeviceDetails {
   info: DeviceInfo
   location: DeviceLocation
+  config: DeviceConfig[]
 }
 
 export class SiteDevicesDetails {
