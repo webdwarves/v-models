@@ -18,6 +18,7 @@ export class MiscModel {
   notificationTypes: BaseNotification[] = [ new BaseNotification() ]
   mapProviders: MapProvider[] = [ new MapProvider() ]
   systemPermissionsTemplateNames: string[] = []
+  webappAsPinReportingInterval: number
 }
 
 export class ClassData {
