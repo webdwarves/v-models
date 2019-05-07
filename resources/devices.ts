@@ -45,4 +45,8 @@ export class AddDeviceModel {
   pitch?: number
   yaw?: number
   positionPolicyId?: number
+  compassAlpha?: number
+  compassBeta?: number
+  compassGamma?: number
+  trueHeading?: number
 }
