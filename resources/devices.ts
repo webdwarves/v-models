@@ -38,6 +38,7 @@ export class AddDeviceModel {
   deviceName: string
   signature: string
   deviceClassId: number
+  modelName?: string
   latitude?: number
   longitude?: number
   altitude?: number
