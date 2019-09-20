@@ -1,5 +1,10 @@
 export type CameraQualityIndex = -1 | 1 | 2 | 3 | 4 | 5 | 6 | 7
 
+export enum CameraImageFormat {
+  jpeg = 'jpeg',
+  mjpeg = 'mjpeg'
+}
+
 export interface CameraImage {
   cameraImgId: number,
   cameraDeviceId: number,
@@ -10,7 +15,8 @@ export interface CameraImage {
   imgUrl: string,
   pictureTaken: string,
   timeStamp: string,
-  qualityIndex: number
+  qualityIndex: number,
+  format: CameraImageFormat
 }
 
 export interface CameraImageWithLocation extends CameraImage {
