@@ -5,7 +5,7 @@ export interface SiteDBNotification {
 }
 
 export interface CameraDeviceDBNotification {
-  siteId: number,
+  siteId: number
   cameraDeviceId: number
 }
 
